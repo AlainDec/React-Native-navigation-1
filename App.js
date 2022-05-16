@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 
 function ImageScreen() {
   return (
@@ -31,7 +32,28 @@ const Tab = createBottomTabNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={({ route }) => ({
+          tabBarIcon: ({ focused, color, size }) => {
+            let iconName;
+
+            if (route.name === 'Image') {
+              iconName = focused
+                ? 'ios-image'
+                : 'ios-image-outline';
+            } else if (route.name === 'Text') {
+              iconName = focused 
+                ? 'ios-document-text'
+                : 'ios-document-text-outline';
+            }
+
+            // You can return any component that you like here!
+            return <Ionicons name={iconName} size={size} color={color} />;
+          },
+          tabBarActiveTintColor: 'tomato',
+          tabBarInactiveTintColor: 'gray',
+        })}
+      >
         <Tab.Screen name="Image" component={ImageScreen} />
         <Tab.Screen name="Text" component={TextScreen} />
       </Tab.Navigator>

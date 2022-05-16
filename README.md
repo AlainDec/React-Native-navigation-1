@@ -20,6 +20,6 @@ $ npm install @react-navigation/native @react-navigation/native-stack
 
 $ expo install react-native-screens react-native-safe-area-context
 
-les icônes :
+les icônes : https://github.com/oblador/react-native-vector-icons
 
-$ https://github.com/oblador/react-native-vector-icons
+$ npm i react-native-vector-icons

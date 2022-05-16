@@ -12,7 +12,8 @@ Prendre en compte la différence d’icone entre Android et IOS.
 
 --------
 
-tab navigation : https://reactnavigation.org/docs/tab-based-navigation/
+Aller sur https://reactnative.dev/docs/navigation#react-navigation et le Tab navigation est visible tout en bas de la page et nous amène sur : https://reactnavigation.org/docs/tab-based-navigation/
+
 installation :
 
 $ npm install @react-navigation/native @react-navigation/native-stack

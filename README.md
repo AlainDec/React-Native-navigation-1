@@ -25,3 +25,5 @@ $ npm install @react-navigation/bottom-tabs
 les icônes : https://github.com/oblador/react-native-vector-icons
 
 $ npm i react-native-vector-icons
+
+Choisir une icône : https://ionic.io/ionicons

@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image, Platform } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -37,14 +37,16 @@ export default function App() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
+            let os;
+            Platform.OS === 'ios' ? os = 'ios-' : os = '';
             if (route.name === 'Image') {
               iconName = focused
-                ? 'ios-image'
-                : 'ios-image-outline';
+                ? os + 'image'
+                : os + 'image-outline';
             } else if (route.name === 'Text') {
               iconName = focused 
-                ? 'ios-document-text'
-                : 'ios-document-text-outline';
+                ? os + 'document-text'
+                : os + 'document-text-outline';
             }
 
             // You can return any component that you like here!

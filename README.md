@@ -1,8 +1,8 @@
-# 09-1-navigation
+# Navigation React Native
 
 Création de deux écrans :
-- Le premier doit contenir une image.
-- Le deuxième doit contenir un texte.
+- Le premier contient une image.
+- Le second contient un texte.
 
 Utilisation d'une tab navigation pour passer d’un écran à l’autre.
 Utilisation de React-Native-Vector-Icons pour personnaliser les icones de la tab navigation
@@ -15,7 +15,7 @@ Aller sur https://reactnative.dev/docs/navigation#react-navigation et le Tab nav
 
 installation :
 
-> $ npm install @react-navigation/native @react-navigation/native-stack  
+`$ npm install @react-navigation/native @react-navigation/native-stack`  
 > $ expo install react-native-screens react-native-safe-area-context  
 > $ npm install @react-navigation/bottom-tabs  
 
